@@ -1,4 +1,5 @@
 import os
+# EGL configuration for Docker/headless environments
 if 'PYOPENGL_PLATFORM' not in os.environ:
     os.environ['PYOPENGL_PLATFORM'] = 'egl'
 import torch

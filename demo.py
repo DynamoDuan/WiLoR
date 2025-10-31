@@ -80,8 +80,6 @@ def main():
             scaled_focal_length = model_cfg.EXTRA.FOCAL_LENGTH / model_cfg.MODEL.IMAGE_SIZE * img_size.max()
             pred_cam_t_full     = cam_crop_to_full(pred_cam, box_center, box_size, img_size, scaled_focal_length).detach().cpu().numpy()
 
-            
-            # Render the result
             batch_size = batch['img'].shape[0]
             for n in range(batch_size):
                 # Get filename from path img_path
