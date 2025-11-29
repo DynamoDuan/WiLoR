@@ -1,0 +1,6 @@
+# Pretrained models
+pretrained_models/*.pt
+pretrained_models/*.ckpt
+pretrained_models/*.pth
+pretrained_models/*.pkl
+
